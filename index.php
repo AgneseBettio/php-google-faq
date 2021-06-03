@@ -85,12 +85,15 @@ $google_faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <main>
-        <div>
+        <div class="container">
             <?php
             foreach ($google_faqs as $paragraph) {
                 foreach ($paragraph as $key => $value) {
@@ -120,7 +123,7 @@ $google_faqs = [
                                 }
                             } else {
                                 ?>
-                                <p>
+                                <p class="p-box">
                                     <?php
                                     echo $singleBlock;
                                     ?>
